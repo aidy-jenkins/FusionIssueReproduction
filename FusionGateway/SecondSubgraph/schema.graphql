@@ -1,0 +1,13 @@
+schema {
+	query: Query
+}
+
+type Query {
+	bar: Bar
+	barsByFoo(fooId: ID!): [Bar]
+}
+
+type Bar {
+	id: ID!
+	name: String!
+}

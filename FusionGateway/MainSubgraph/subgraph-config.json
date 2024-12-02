@@ -1,0 +1,4 @@
+{
+  "subgraph": "main",
+  "http": { "baseAddress": "https://chillicream.com?ThisURLDoesntMatter" }
+}

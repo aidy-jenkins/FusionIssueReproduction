@@ -1,3 +1,3 @@
 extend type Foo {
-	bars: [Bar!]! @resolver(select: "barsByFoo(fooId: $id)")
+	bars(fooId: Int! @require(field: "id")): [Bar!] @resolver(select: "barsByFoo(fooId: $id)")
 }

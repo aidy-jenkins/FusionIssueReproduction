@@ -3,11 +3,10 @@ schema {
 }
 
 type Query {
-	bar: Bar
-	barsByFoo(fooId: ID!): [Bar]
+	barsByFoo(fooId: Int!): [Bar!]
 }
 
 type Bar {
-	id: ID!
+	id: Int!
 	name: String!
 }

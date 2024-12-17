@@ -3,7 +3,7 @@ schema {
 }
 
 type Query {
-	foo: Foo
+	foos(ids: [Int!]): [Foo!]
 }
 
 type Foo {

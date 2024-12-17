@@ -3,10 +3,14 @@ schema {
 }
 
 type Query {
-	barsByFoo(fooId: Int!): [Bar!]
+	foosById(ids: [Int!]!): [Foo!] @lookup @internal
+}
+
+type Foo {
+	id: Int!
+	bar: Bar!
 }
 
 type Bar {
 	id: Int!
-	name: String!
 }
